@@ -8,10 +8,12 @@
 <br/>
 Open your treminal and run the following Commands -
 <br/>
-``` <br/>
+``` 
+
 git clone https://github.com/devartstar/Cake-Store.git<br/>
 npm install<br/>
 npm start <br/>
+
 ```
 <br/>
 <br/>
@@ -22,6 +24,7 @@ It provies with a lot of options of Cake Size, Cake Flavour with a live preview.
 It also allows you to place ordering of your cake to your Loved Ones.
 
 ### UI design
+[Figma Design Link](https://www.figma.com/file/Ixbe4bU8sgMp3dLxucBuxN/Untitled?node-id=0%3A1)<br/>
 ![Desktop View](./public/ReadMeImages/Cake-Design-figma.png)
 
 ### Project Planning
