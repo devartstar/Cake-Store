@@ -1,9 +1,14 @@
 # The Cake Store
+
 <br/>
 <br/>
+
 ## To Run this Application In your Local Maching - 
+
 <br/>
+
 ### Pre-requisites - 
+
     Make sure you have Node installed.
 <br/>
 Open your treminal and run the following Commands -
@@ -17,7 +22,9 @@ npm start
 
 <br/>
 <br/>
+
 ## About the Application -
+
 <br/>
 This application allows you to Customize and Build your own favourite cake. <br/>
 It provies with a lot of options of Cake Size, Cake Flavour with a live preview. <br/>
