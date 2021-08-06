@@ -8,7 +8,7 @@ import classes from './CakeIngredient.module.css';
  * Also added Prop- Type Validiation
  */
 
-class CakeIngredient{
+class CakeIngredient extends Component{
     render(){
         let ingredient = null;
         switch(this.props.type){
@@ -21,22 +21,22 @@ class CakeIngredient{
             case('icing-1'):
                 ingredient = (
                     <div className = {classes.Icing1}>
-                        <div className = {classes.Chocolate}></div>
-                        <div className = {classes.Strawberry}></div>
+                        {/* <div className = {classes.Chocolate}></div> */}
+                        {/* <div className = {classes.Strawberry}></div> */}
                     </div>
                 );
                 break;
             case('icing-2'):
                 ingredient = (
                     <div className = {classes.Icing1}>
-                        <div className = {classes.Chocolate}></div>
+                        {/* <div className = {classes.Chocolate}></div> */}
                     </div>
                 );
                 break;
             case('icing-3'):
                 ingredient = (
                     <div className = {classes.Icing1}>
-                        <div className = {classes.Strawberry}></div>
+                        {/* <div className = {classes.Strawberry}></div> */}
                     </div>
                 );
                 break;    
@@ -58,4 +58,4 @@ CakeIngredient.propTypes = {
     type: PropTypes.string.isRequired
 };
 
-export default burgerIngredient;
+export default CakeIngredient;
