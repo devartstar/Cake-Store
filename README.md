@@ -10,9 +10,9 @@ Open your treminal and run the following Commands -
 <br/>
 
 ``` 
-git clone https://github.com/devartstar/Cake-Store.git<br/>
-npm install<br/>
-npm start <br/>
+git clone https://github.com/devartstar/Cake-Store.git
+npm install
+npm start
 ```
 
 <br/>
