@@ -8,10 +8,23 @@ import Cake from '../../components/Cake/Cake';
  */
 
 class CakeBuilder extends Component {
+
+    /**
+     * To manage the state of ingredient dynamically
+     */
+    state = {
+        ingredients: {
+            icing1 : 1,
+            icing2 : 2,
+            icing3 : 1,
+            icing4 : 2
+        }
+    }
+
     render(){
         return(
             <Aux>
-                <Cake />
+                <Cake ingredients = {this.state.ingredients}/>
                 <div>Build Controls</div>
             </Aux>
         );

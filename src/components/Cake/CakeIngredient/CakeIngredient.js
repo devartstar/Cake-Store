@@ -18,7 +18,7 @@ class CakeIngredient extends Component{
             case('cake-bottom'):
                 ingredient = <div className = {classes.CakeBottom}></div>;
                 break;
-            case('icing-1'):
+            case('icing1'):
                 ingredient = (
                     <div className = {classes.Icing1}>
                         {/* <div className = {classes.Chocolate}></div> */}
@@ -26,21 +26,21 @@ class CakeIngredient extends Component{
                     </div>
                 );
                 break;
-            case('icing-2'):
+            case('icing2'):
                 ingredient = (
                     <div className = {classes.Icing1}>
                         {/* <div className = {classes.Chocolate}></div> */}
                     </div>
                 );
                 break;
-            case('icing-3'):
+            case('icing3'):
                 ingredient = (
                     <div className = {classes.Icing1}>
                         {/* <div className = {classes.Strawberry}></div> */}
                     </div>
                 );
                 break;    
-            case('icing-4'):
+            case('icing4'):
                 ingredient = (
                     <div className = {classes.Icing1}>
                     </div>
