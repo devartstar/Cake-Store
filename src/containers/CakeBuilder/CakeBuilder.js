@@ -14,10 +14,10 @@ class CakeBuilder extends Component {
      */
     state = {
         ingredients: {
-            icing1 : 1,
-            icing2 : 2,
-            icing3 : 1,
-            icing4 : 2
+            icing1 : 0,
+            icing2 : 0,
+            icing3 : 0,
+            icing4 : 0
         }
     }
 
