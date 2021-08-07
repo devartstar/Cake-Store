@@ -9,10 +9,10 @@ import BuildControls from '../../components/Cake/BuildControls/BuildControls';
  */
 
 const INGREDIENT_PRICES = {
-    Icing1 : 100,
-    Icing2 : 120,
-    Icing3 : 130,
-    Icing4 : 140,
+    icing1 : 100,
+    icing2 : 120,
+    icing3 : 130,
+    icing4 : 140,
 }
 
 class CakeBuilder extends Component {
@@ -42,13 +42,37 @@ class CakeBuilder extends Component {
         const newPrice = oldPrice + priceAddition;
         this.setState({totalPrice: newPrice, ingredients: updatedIngredients});
     }
+    removeIngredientHandler = (type) => {
+        const oldCount = this.state.ingredients[type];
+        if(oldCount<=0){
+            return;
+        }
+        const updatedCount = oldCount-1;
+        const updatedIngredients ={
+            ...this.state.ingredients
+        };
+        updatedIngredients[type] = updatedCount;
+        const priceAddition = INGREDIENT_PRICES[type];
+        const oldPrice = this.state.totalPrice;
+        const newPrice = oldPrice - priceAddition;
+        this.setState({totalPrice: newPrice, ingredients: updatedIngredients});
+    }
 
     render(){
+        const disabledInfo = {
+            ...this.state.ingredients
+        };
+        for(let key in disabledInfo){
+            disabledInfo[key] = disabledInfo[key] <= 0 
+        }
         return(
             <Aux>
                 <Cake ingredients = {this.state.ingredients}/>
                 <BuildControls
                     ingredientAdded={this.addIngredientHandler}
+                    ingredientRemoved = {this.removeIngredientHandler}
+                    disabled={disabledInfo}
+                    price ={this.state.totalPrice}
                 />
             </Aux>
         );
