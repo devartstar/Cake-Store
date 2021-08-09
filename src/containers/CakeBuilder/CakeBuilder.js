@@ -83,6 +83,14 @@ class CakeBuilder extends Component {
         this.setState({purchasing : true});
     }
 
+    purchaseCancelHandler = () => {
+        this.setState({purchasing : false});
+    }
+
+    purchaseContinueHandler = () => {
+        alert('You continued');
+    }
+
     render(){
         const disabledInfo = {
             ...this.state.ingredients
@@ -92,8 +100,12 @@ class CakeBuilder extends Component {
         }
         return(
             <Aux>
-                <Modal show={this.state.purchasing}>
-                    <OrderSummary ingredients = {this.state.ingredients} />
+                <Modal show={this.state.purchasing} modalClosed={this.purchaseCancelHandler}>
+                    <OrderSummary ingredients = {this.state.ingredients} 
+                                    purchaseContinued = {this.purchaseContinueHandler}
+                                    purchaseCancelled = {this.purchaseCancelHandler}
+                                    price = {this.state.totalPrice}
+                    />
                 </Modal>
 
                 <Cake ingredients = {this.state.ingredients}/>
