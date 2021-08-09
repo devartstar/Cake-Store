@@ -32,6 +32,7 @@ class CakeBuilder extends Component {
         },
         totalPrice : 100,
         purchasable : false,
+        purchasing : false
     }
     /**
      * Update Purchase state helps to update weter the  burger is purchasable(has some ingredients/ icing)
@@ -77,6 +78,11 @@ class CakeBuilder extends Component {
         this.updatePurchaseState(updatedIngredients);
     }
 
+    
+    purchaseHandler = () => {
+        this.setState({purchasing : true});
+    }
+
     render(){
         const disabledInfo = {
             ...this.state.ingredients
@@ -86,7 +92,7 @@ class CakeBuilder extends Component {
         }
         return(
             <Aux>
-                <Modal>
+                <Modal show={this.state.purchasing}>
                     <OrderSummary ingredients = {this.state.ingredients} />
                 </Modal>
 
@@ -97,6 +103,7 @@ class CakeBuilder extends Component {
                     disabled={disabledInfo}
                     price ={this.state.totalPrice}
                     purchasable = {this.state.purchasable}
+                    ordered = {this.purchaseHandler}
                 />
             </Aux>
         );
