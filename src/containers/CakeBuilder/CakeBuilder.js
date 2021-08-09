@@ -28,6 +28,20 @@ class CakeBuilder extends Component {
             icing4 : 0
         },
         totalPrice : 100,
+        purchasable : false,
+    }
+    /**
+     * Update Purchase state helps to update weter the  burger is purchasable(has some ingredients/ icing)
+     * @param {new count of Ingredeients after addition or deletian} ingredients 
+     */
+    updatePurchaseState (ingredients) {
+
+        const sum = Object.keys(ingredients).map(igKey =>{
+            return ingredients[igKey];
+        }).reduce((sum,ele)=>{
+            return sum + ele;
+        }, 0);
+        this.setState({purchasable : sum>0});
     }
 
     addIngredientHandler = (type) => {
@@ -41,6 +55,7 @@ class CakeBuilder extends Component {
         const oldPrice = this.state.totalPrice;
         const newPrice = oldPrice + priceAddition;
         this.setState({totalPrice: newPrice, ingredients: updatedIngredients});
+        this.updatePurchaseState(updatedIngredients);
     }
     removeIngredientHandler = (type) => {
         const oldCount = this.state.ingredients[type];
@@ -56,6 +71,7 @@ class CakeBuilder extends Component {
         const oldPrice = this.state.totalPrice;
         const newPrice = oldPrice - priceAddition;
         this.setState({totalPrice: newPrice, ingredients: updatedIngredients});
+        this.updatePurchaseState(updatedIngredients);
     }
 
     render(){
@@ -73,6 +89,7 @@ class CakeBuilder extends Component {
                     ingredientRemoved = {this.removeIngredientHandler}
                     disabled={disabledInfo}
                     price ={this.state.totalPrice}
+                    purchasable = {this.state.purchasable}
                 />
             </Aux>
         );
