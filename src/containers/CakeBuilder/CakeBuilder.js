@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import Aux from '../../hoc/Aux';
 import Cake from '../../components/Cake/Cake';
 import BuildControls from '../../components/Cake/BuildControls/BuildControls';
+import Modal from '../../components/UI/Modal/Modal';
+import OrderSummary from '../../components/Cake/OrderSummary/OrderSummary';
+
 /**
  * CakeBuilder is the MAIN PAGE where both 
  * the cake ingredients
@@ -83,6 +86,10 @@ class CakeBuilder extends Component {
         }
         return(
             <Aux>
+                <Modal>
+                    <OrderSummary ingredients = {this.state.ingredients} />
+                </Modal>
+
                 <Cake ingredients = {this.state.ingredients}/>
                 <BuildControls
                     ingredientAdded={this.addIngredientHandler}
