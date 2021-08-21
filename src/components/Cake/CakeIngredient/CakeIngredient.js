@@ -28,21 +28,21 @@ class CakeIngredient extends Component{
                 break;
             case('icing2'):
                 ingredient = (
-                    <div className = {classes.Icing1}>
+                    <div className = {classes.Icing2}>
                         {/* <div className = {classes.Chocolate}></div> */}
                     </div>
                 );
                 break;
             case('icing3'):
                 ingredient = (
-                    <div className = {classes.Icing1}>
+                    <div className = {classes.Icing3}>
                         {/* <div className = {classes.Strawberry}></div> */}
                     </div>
                 );
                 break;    
             case('icing4'):
                 ingredient = (
-                    <div className = {classes.Icing1}>
+                    <div className = {classes.Icing4}>
                     </div>
                 );
                 break;    

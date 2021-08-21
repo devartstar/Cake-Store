@@ -1,114 +1,113 @@
 .CakeBottom {
-    height: 13%;
-    width: 85%;
-    background: linear-gradient(#F08E4A, #e27b36);
-    /* border-radius: 0 0 30px 30px; */
-    box-shadow: inset -15px 0 #c15711;
-    margin: 2% auto;
+  height: 23%;
+  width: 85%;
+  background: linear-gradient(#ff3988, #ff0028);
+  /* border-radius: 0 0 30px 30px; */
+  box-shadow: inset -15px 0 #e62b54;
+  margin: 2% auto;
 }
 
 .CakeTop {
-    height: 20%;
-    width: 60%;
-    background: linear-gradient(#bc581e, #e27b36);
-    /* border-radius: 50% 50% 0 0; */
-    box-shadow: inset -15px 0 #c15711;
-    margin: 2% auto;
-    position: relative;
-}
-
-.Icing1 {
-    width: 80%;
-    height: 8%;
-    background: linear-gradient(#7f3608, #702e05);
-    margin: 2% auto;
-    border-radius: 15px;
-}
-
-.Icing2 {
-    width: 75%;
-    height: 4.5%;
-    margin: 2% auto;
-    background: linear-gradient(#f4d004, #d6bb22);
-    border-radius: 20px;
-}
-
-.Icing3 {
-    width: 70%;
-    height: 7%;
-    margin: 2% auto;
-    background: linear-gradient(#228c1d, #91ce50);
-    border-radius: 20px;
+  height: 15%;
+  width: 60%;
+  background: linear-gradient(#d32f2f, #f44336);
+  /* border-radius: 50% 50% 0 0; */
+  box-shadow: inset -15px 0 #c62828;
+  margin: 2% auto;
+  position: relative;
 }
 
 .Icing4 {
-    width: 65%;
-    height: 3%;
-    background: linear-gradient(#bf3813, #c45e38);
-    margin: 2% auto;
+  width: 80%;
+  height: 8%;
+  background: linear-gradient(#b71c1c, #c62828);
+  margin: 2% auto;
+}
+
+.Icing3 {
+  width: 75%;
+  height: 6%;
+  margin: 2% auto;
+  background: linear-gradient(#f4d004, #d6bb22);
+  border-radius: 2px;
+}
+
+.Icing2 {
+  width: 70%;
+  height: 4%;
+  margin: 2% auto;
+  background: linear-gradient(#228c1d, #91ce50);
+  border-radius: 10px;
+}
+
+.Icing1 {
+  width: 65%;
+  height: 2%;
+  background: linear-gradient(#bf3813, #c45e38);
+  margin: 2% auto;
 }
 /*
 .Chocolate {
-    width: 10%;
-    height: 15%;
-    position: absolute;
-    background-color: white;
-    left: 30%;
-    top: 50%;
-    border-radius: 40%;
-    transform: rotate(-20deg);
-    box-shadow: inset -2px -3px #c9c9c9;
+  width: 10%;
+  height: 15%;
+  position: absolute;
+  background-color: white;
+  left: 30%;
+  top: 50%;
+  border-radius: 40%;
+  transform: rotate(-20deg);
+  box-shadow: inset -2px -3px #c9c9c9;
 }
 
 .Chocolate:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: white;
-    left: -170%;
-    top: -260%;
-    border-radius: 40%;
-    transform: rotate(60deg);
-    box-shadow: inset -1px 2px #c9c9c9;
-  }
-  
-.Chocolate:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: white;
-    left: 180%;
-    top: -50%;
-    border-radius: 40%;
-    transform: rotate(60deg);
-    box-shadow: inset -1px -3px #c9c9c9;
-  }
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  left: -170%;
+  top: -260%;
+  border-radius: 40%;
+  transform: rotate(60deg);
+  box-shadow: inset -1px 2px #c9c9c9;
+}
 
-  .Strawberry {
-    width: 10%;
-    height: 15%;
-    position: absolute;
-    background-color: white;
-    left: 64%;
-    top: 50%;
-    border-radius: 40%;
-    transform: rotate(10deg);
-    box-shadow: inset -3px 0 #c9c9c9;
-  }
-  
-  .Strawberry:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: white;
-    left: 150%;
-    top: -130%;
-    border-radius: 40%;
-    transform: rotate(90deg);
-    box-shadow: inset 1px 3px #c9c9c9;
-  }
+.Chocolate:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  left: 180%;
+  top: -50%;
+  border-radius: 40%;
+  transform: rotate(60deg);
+  box-shadow: inset -1px -3px #c9c9c9;
+}
+
+.Strawberry {
+  width: 10%;
+  height: 15%;
+  position: absolute;
+  background-color: white;
+  left: 64%;
+  top: 50%;
+  border-radius: 40%;
+  transform: rotate(10deg);
+  box-shadow: inset -3px 0 #c9c9c9;
+}
+
+.Strawberry:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  left: 150%;
+  top: -130%;
+  border-radius: 40%;
+  transform: rotate(90deg);
+  box-shadow: inset 1px 3px #c9c9c9;
+}
 
 */

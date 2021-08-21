@@ -1,3 +1,7 @@
 .Content{
-    margin-top : 72px;
+    margin-top : 55px;
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    background-color: #FFB7CB;
 }
